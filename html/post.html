@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST PAGE</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="left-section">
+                <h1 class="main-heading">ScriBBler</h1>
+                <p>Explore, Imagine, Create</p>
+            </div>
+            <div class="right-section">
+                <button id="signup-button" class="sign-up">Sign Up</button>
+                <button id="signin-button" class="sign-in">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="single-post-container">
+        <div class="post-title">
+            <h2 class="title" contenteditable="false">Everthing you should know about 'module' and 'require' in Node.js</h2>
+        </div>
+        <div class="username-post">
+            <span>Srishti Gupta</span>
+            <button class="edit-btn" id="editBtn">Edit <i class="fa-solid fa-pen-to-square fa-xs"></i></button>
+        </div>
+        <div class="post-content">
+            <p class="post-text" contenteditable="false">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.In Node.js, the modular structure enhances code organization and reusability. Each JavaScript file, such as the example xyz.js, is considered a standalone module with its own scope. This modular approach enables developers to encapsulate functionality within individual files, promoting a clean and maintainable codebase. Modules in Node.js facilitate the creation of reusable components, encouraging a more efficient and scalable development process.
+            Moreover, Node.js employs the CommonJS module system, allowing modules to export specific functionalities using the module.exports object. This mechanism enables seamless integration of modules into other parts of the application, enhancing code modularity and making it easier to manage dependencies. As a result, Node.js applications can be constructed by combining and utilizing these modular components, fostering a modular and organized approach to JavaScript development.</p>
+        </div>
+        <div class="like-box">
+            <button id="likeBtn" class="liked-btn"><i class="fa-solid fa-thumbs-up"></i> <span id="like-text">Like</span></button>
+        </div>
+            <p id="likeCount"></p>
+        <div class="comment-box">
+            <form>
+                <textarea id="commentInput" placeholder="Leave a comment..." rows="4"></textarea>
+                <div>
+                    <button id="commentBtn" class="comment-btn">Comment</button>
+                </div>
+            </form>
+        </div>
+        <div class="all-comments-box">
+            <h3>All Comments</h3>
+            <div id="commentsList" class="comments-section">
+                <p>Good Post!</p>
+                <p>Great Post Thanks!</p>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/post.js"></script>
+</body>
+</html>

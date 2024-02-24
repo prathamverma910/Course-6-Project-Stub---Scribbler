@@ -1,0 +1,249 @@
+
+
+.post-title {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.post-title h2 {
+    text-align: center;
+}
+
+.username-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.post-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.edit-btn {
+    background-color: rgb(255, 0, 102);
+    color: white;
+    border: none;
+    box-shadow: 0px 7px 10px -5px rgba(255, 0, 102, 0.8);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.edit-btn:hover {
+    transform: scale(0.97);
+}
+
+.like-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 10px;
+    width: 5%;
+}
+
+.liked-btn {
+    background-color: rgb(255, 0, 102);
+    color: white;
+    border: none;
+    font-size: 14px;
+    box-shadow: 0px 7px 10px -5px rgba(255, 0, 102, 0.8);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.liked-btn:hover {
+    transform: scale(0.97);
+}
+
+#likeBtn {
+    cursor: pointer;
+}
+
+#likeCount {
+    width: auto;
+    font-size: 15px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding-left: 40px;
+}
+
+.comment-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.all-comments-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.comments-section {
+    background-color: gainsboro;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 67%;
+    margin-top: -7px;
+}
+
+.comments-section p {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0.5%;
+}
+
+#commentInput {
+    width: 980px;
+}
+
+.comment-btn {
+    background-color: rgb(255, 0, 102);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px -5px rgba(255, 0, 102, 0.8);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.comment-btn:hover {
+    transform: scale(0.97);
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.main-header {
+    padding: 20px 0;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.left-section p {
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.0em;
+    color: blue;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.main-heading {
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+    color: blue;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+button.sign-up,
+button.sign-in {
+    background-color: blue;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 10px;
+    border: white;
+    margin-top: -30px;
+    border-radius: 2%;
+}
+
+@media only screen and (max-width: 1300px){
+    .like-box {
+        min-width: 8%;
+    }
+
+    #commentInput {
+        max-width: 83%;
+    }
+}
+
+@media only screen and (max-width: 868px){
+    .like-box {
+        min-width: 8%;
+    }
+
+    #commentInput {
+        max-width: 55%;
+    }
+}
+
+@media only screen and (max-width: 797px){
+    .like-box {
+        min-width: 12%;
+    }
+}
+
+
+@media only screen and (max-width: 797px){
+    .like-box {
+        min-width: 16%;
+    }
+    
+    #commentInput {
+        max-width: 38%;
+    }
+}
+
+@media only screen and (max-width: 451px){
+    .like-box {
+        min-width: 19%;
+    }
+    
+    #commentInput {
+        max-width: 27%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .like-box {
+        min-width: 24%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #commentInput {
+        max-width: 20%;
+    }
+}
+
